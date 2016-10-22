@@ -1,4 +1,4 @@
-pacman -Syu < pacman-packages
+pacman -Syu < pacman-packages --noconfirm
 
 pip install virtualenvwrapper
 
