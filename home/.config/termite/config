@@ -1,0 +1,7 @@
+[options]
+font = inconsolata 14
+
+[colors]
+foreground = #dadada
+background  = #222222
+
