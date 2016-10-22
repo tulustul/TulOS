@@ -1,3 +1,5 @@
+set -e
+
 sudo pacman -S git --noconfirm
 cd ~
 rm -Rf TulOS

@@ -1,3 +1,4 @@
+binutils
 chromium
 htop
 i3-wm
@@ -5,7 +6,6 @@ i3lock
 i3status
 ranger
 termite
-ttf-inconsolata-g
 vim
 xclip
 xorg-server

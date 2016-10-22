@@ -1,3 +1,7 @@
+set -e
+
+sudo pacman -Syu - < packages --noconfirm
+
 cd ~
 rm -Rf package-query
 git clone https://aur.archlinux.org/package-query.git
@@ -10,7 +14,7 @@ makepkg -si
 cd ..
 
 cd TulOS
-yaourt -Syu - < packages --noconfirm
+yaourt -S - < package-aur --noconfirm
 
 sudo pip install virtualenvwrapper
 
@@ -19,4 +23,3 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 cp -R home/. ~/
 
 touch ~/.tulrc
-
