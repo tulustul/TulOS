@@ -1,3 +1,5 @@
+cd ~
+rm -Rf package-query
 git clone https://aur.archlinux.org/package-query.git
 cd package-query
 makepkg -si
@@ -7,6 +9,7 @@ cd yaourt
 makepkg -si
 cd ..
 
+cd TulOS
 yaourt -Syu - < packages --noconfirm
 
 sudo pip install virtualenvwrapper

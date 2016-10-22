@@ -1,6 +1,6 @@
 sudo pacman -S git --noconfirm
 cd ~
-rm -R TulOS
+rm -Rf TulOS
 git clone https://github.com/tulustul/TulOS.git
 
 cd TulOS
