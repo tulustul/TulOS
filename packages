@@ -4,10 +4,13 @@ gcc
 htop
 i3-wm
 i3lock
-i3status
 ranger
+rofi
+scrot
+sysstat
 termite
 vim
 xclip
+xnviewmp
 xorg-server
 zsh

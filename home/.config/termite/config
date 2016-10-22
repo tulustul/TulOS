@@ -1,5 +1,5 @@
 [options]
-font = inconsolata 14
+font = Inconsolata, Font Awesome 14
 
 [colors]
 foreground = #dadada
