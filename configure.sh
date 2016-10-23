@@ -1,7 +1,7 @@
 set -e
 
 function install_aur_package {
-    if ! (pacman -Q package-query >/dev/null) then
+    if ! (pacman -Q $1 >/dev/null) then
         yaourt -S $1 --noconfirm
     fi
 }
