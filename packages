@@ -15,5 +15,6 @@ sysstat
 termite
 vim
 xclip
+xorg-xinit
 xorg-server
 zsh
