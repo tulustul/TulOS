@@ -7,6 +7,7 @@ rm -Rf package-query
 git clone https://aur.archlinux.org/package-query.git
 cd package-query
 makepkg -si --noconfirm
+rm -Rf package-query
 
 cd ~
 rm -Rf yaourt
@@ -14,9 +15,13 @@ git clone https://aur.archlinux.org/yaourt.git
 cd yaourt
 makepkg -si --noconfirm
 cd ..
+rm -Rf yaourt
 
 cd TulOS
-yaourt -S - < packages-aur --noconfirm
+yaourt i3blocks
+yaourt ttf-inconsolata-g
+yaourt ttf-font-awesome
+yaourt xnviewmp
 
 sudo pip install virtualenvwrapper
 
