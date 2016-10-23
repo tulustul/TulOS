@@ -6,10 +6,6 @@ function install_aur_package {
     fi
 }
 
-function link_file {
-
-}
-
 sudo pacman -Syu - < packages --noconfirm
 
 if ! (pacman -Q package-query >/dev/null) then
