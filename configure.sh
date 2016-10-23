@@ -36,16 +36,17 @@ sudo pip install virtualenvwrapper
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-cd TulOS
 rm ~/.config/i3/config
 rm ~/.config/i3blocks/config
 rm ~/.config/termite/config
 rm ~/.config/rofi/config
+rm ~/.zshrc
 
-ln ./home/.config/i3/config ~/.config/i3/config
-ln ./home/.config/i3blocks/config ~/.config/i3blocks/config
-ln ./home/.config/termite/config ~/.config/termite/config
-ln ./home/.config/rofi/config ~/.config/rofi/config
+ln ~/TulOS/home/.config/i3/config ~/.config/i3/config
+ln ~/TulOS/home/.config/i3blocks/config ~/.config/i3blocks/config
+ln ~/TulOS/home/.config/termite/config ~/.config/termite/config
+ln ~/TulOS/home/.config/rofi/config ~/.config/rofi/config
+ln ~/TulOS/home/.zshrc ~/.zshrc
 
 touch ~/.tulrc
 
