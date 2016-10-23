@@ -6,6 +6,10 @@ function install_aur_package {
     fi
 }
 
+function link_file {
+
+}
+
 sudo pacman -Syu - < packages --noconfirm
 
 if ! (pacman -Q package-query >/dev/null) then
@@ -36,20 +40,12 @@ sudo pip install virtualenvwrapper
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-rm ~/.config/i3/config
-rm ~/.config/i3blocks/config
-rm ~/.config/termite/config
-rm ~/.config/rofi/config
-rm ~/.zshrc
-
-ln ~/TulOS/home/.config/i3/config ~/.config/i3/config
-ln ~/TulOS/home/.config/i3blocks/config ~/.config/i3blocks/config
-ln ~/TulOS/home/.config/termite/config ~/.config/termite/config
-ln ~/TulOS/home/.config/rofi/config ~/.config/rofi/config
-ln ~/TulOS/home/.zshrc ~/.zshrc
+cp -R ~/TulOS/home ~
 
 touch ~/.tulrc
 
 # vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+rm -Rf ~/TulOS
