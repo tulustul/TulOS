@@ -132,26 +132,26 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+    # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+    # Pressing left will shrink the window’s width.
+    # Pressing right will grow the window’s width.
+    # Pressing up will shrink the window’s height.
+    # Pressing down will grow the window’s height.
+    bindsym j resize shrink width 10 px or 10 ppt
+    bindsym k resize grow height 10 px or 10 ppt
+    bindsym l resize shrink height 10 px or 10 ppt
+    bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+    # same bindings, but for the arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -159,19 +159,16 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3blocks 
-	colors {
-        	#background #444444
-	        #statusline #eeeeee
- 	        background #222222
-                statusline #dddddd
-                separator  #666666
-
-		focused_workspace  #444444 #444444  #ffffff
-		active_workspace   #333333 #333333 #888888
-	        inactive_workspace #333333 #333333 #888888
-                urgent_workspace   #900000 #900000 #ffffff
-	}
+    status_command i3blocks
+    colors {
+	    background #222222
+        statusline #dddddd
+        separator  #666666
+	    focused_workspace  #222222 #222222  #ffffff
+        active_workspace   #222222 #222222 #555555
+        inactive_workspace #222222 #222222 #555555
+        urgent_workspace   #900000 #900000 #ffffff
+   }
 }
 
 # class                 border  backgr. text    indicator child_border
@@ -190,4 +187,4 @@ bindsym Print exec scrot -e 'mv $f /tmp/ && xnviewmp /tmp/$f'
 # scrot & xnviewmp - select window or rectangle
 bindsym $mod+Print exec scrot -s -e 'mv $f /tmp/ && xnviewmp /tmp/$f'
 
-bindsym $mod+Delete exec i3lock -c 000000 
+bindsym $mod+Delete exec i3lock -c 000000

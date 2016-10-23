@@ -1,9 +1,12 @@
 binutils
 chromium
+fakeroot
 gcc
 htop
 i3-wm
 i3lock
+make
+pkg-config
 ranger
 rofi
 scrot
