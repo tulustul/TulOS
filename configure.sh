@@ -1,14 +1,14 @@
 set -e
 
 function install_aur_package {
-    if (pacman -Q package-query >/dev/null) then
+    if ! (pacman -Q package-query >/dev/null) then
         yaourt -S $1 --noconfirm
     fi
 }
 
 sudo pacman -Syu - < packages --noconfirm
 
-if (pacman -Q package-query >/dev/null) then
+if ! (pacman -Q package-query >/dev/null) then
     cd ~
     rm -Rf package-query
     git clone https://aur.archlinux.org/package-query.git
@@ -17,7 +17,7 @@ if (pacman -Q package-query >/dev/null) then
     rm -Rf package-query
 fi
 
-if (pacman -Q yaourt >/dev/null) then
+if ! (pacman -Q yaourt >/dev/null) then
     cd ~
     rm -Rf yaourt
     git clone https://aur.archlinux.org/yaourt.git
