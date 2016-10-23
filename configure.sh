@@ -18,10 +18,7 @@ cd ..
 rm -Rf yaourt
 
 cd TulOS
-yaourt -S i3blocks --noconfirm
-yaourt -S ttf-inconsolata-g --noconfirm
-yaourt -S ttf-font-awesome --noconfirm
-yaourt -S xnviewmp --noconfirm
+yaourt -S i3blocks ttf-inconsolata-g ttf-font-awesome xnviewmp --noconfirm
 
 sudo pip install virtualenvwrapper
 
