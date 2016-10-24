@@ -2,6 +2,7 @@ binutils
 chromium
 fakeroot
 gcc
+gnome-themes-standard
 htop
 i3-wm
 i3lock
@@ -19,3 +20,4 @@ xclip
 xorg-server
 xorg-xinit
 zsh
+gtk-engine-murrine
