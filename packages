@@ -6,6 +6,7 @@ htop
 i3-wm
 i3lock
 make
+package-manager-applet
 pkg-config
 python-pip
 ranger
@@ -15,6 +16,6 @@ sysstat
 termite
 vim
 xclip
-xorg-xinit
 xorg-server
+xorg-xinit
 zsh

@@ -14,6 +14,7 @@ if ! (pacman -Q package-query >/dev/null) then
     git clone https://aur.archlinux.org/package-query.git
     cd package-query
     makepkg -si --noconfirm
+    cd ..
     rm -Rf package-query
 fi
 
