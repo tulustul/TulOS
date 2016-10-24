@@ -6,7 +6,7 @@ htop
 i3-wm
 i3lock
 make
-package-manager-applet
+network-manager-applet
 pkg-config
 python-pip
 ranger
