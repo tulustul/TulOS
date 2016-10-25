@@ -32,7 +32,6 @@ install_aur_package i3blocks
 install_aur_package ttf-inconsolata-g
 install_aur_package ttf-font-awesome
 install_aur_package xnviewmp
-install_aur_package gtk-theme-arc
 
 sudo pip install virtualenvwrapper
 
