@@ -161,10 +161,10 @@ bindsym $mod+r mode "resize"
 bar {
     status_command i3blocks
     colors {
-	    background #222222
+        background #222222
         statusline #dddddd
         separator  #666666
-	    focused_workspace  #222222 #222222  #ffffff
+        focused_workspace  #222222 #222222  #ffffff
         active_workspace   #222222 #222222 #555555
         inactive_workspace #222222 #222222 #555555
         urgent_workspace   #900000 #900000 #ffffff
@@ -172,7 +172,7 @@ bar {
 }
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #444444 #444444 #dddddd
+client.focused          #444444 #3e515a #ffffff
 client.focused_inactive #333333 #333333 #888888
 client.unfocused        #333333 #333333 #888888
 client.urgent           #900000 #900000 #fffff

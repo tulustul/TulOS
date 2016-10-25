@@ -92,6 +92,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
 
+QT_STYLE_OVERRIDE=breeze-dark
+
 source /usr/bin/virtualenvwrapper.sh
 
 source ~/.tulrc

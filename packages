@@ -2,13 +2,19 @@ binutils
 chromium
 fakeroot
 gcc
-gnome-themes-standard
+gstreamer
+gstreamer0.10
+gstreamer0.10-bad
+gstreamer0.10-base
+gstreamer0.10-good
+gstreamer0.10-ugly
 htop
 i3-wm
 i3lock
 make
 network-manager-applet
 pkg-config
+pulseaudio
 python-pip
 ranger
 rofi
@@ -20,4 +26,3 @@ xclip
 xorg-server
 xorg-xinit
 zsh
-gtk-engine-murrine
