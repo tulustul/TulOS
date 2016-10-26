@@ -188,5 +188,7 @@ bindsym Print exec scrot -e 'mv $f /tmp/ && xnviewmp /tmp/$f'
 bindsym $mod+Print exec scrot -s -e 'mv $f /tmp/ && xnviewmp /tmp/$f'
 
 bindsym $mod+Delete exec i3lock -c 000000
+bindsym $mod+Pause exec i3lock -c 000000 && systemctl suspend
 
 exec --no-startup-id nm-applet
+exec --no-startup-id xautolock -time 3 -locker 'i3lock -c 000000' &
