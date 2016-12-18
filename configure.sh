@@ -29,7 +29,7 @@ if ! (pacman -Q yaourt >/dev/null) then
 fi
 
 install_aur_package i3blocks
-install_aur_package ttf-inconsolata-g
+install_aur_package ttf-inconsolata-g  # probably not needed
 install_aur_package ttf-font-awesome
 install_aur_package xnviewmp
 install_aur_package adapta-gtk-theme
@@ -42,15 +42,15 @@ cp -R ~/TulOS/home/. ~/
 
 touch ~/.tulrc
 
+cd ~
+
+git clone https://github.com/powerline/fonts.git
+./fonts/install.sh
+rm -Rf fonts
+
 # vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-# wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-# mv PowerlineSymbols.otf ~/.fonts/
-# fc-cache -vf ~/.fonts/
-# mkdir ~/.config/fontconfig/conf.d
-# mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
 rm -Rf ~/TulOS
