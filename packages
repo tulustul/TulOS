@@ -1,4 +1,7 @@
+automake
+base-devel
 binutils
+breeze
 chromium
 fakeroot
 gcc
@@ -13,6 +16,7 @@ i3-wm
 i3lock
 make
 network-manager-applet
+networkmanager
 pkg-config
 pulseaudio
 python-pip
@@ -22,6 +26,7 @@ scrot
 sysstat
 termite
 vim
+xautolock
 xclip
 xorg-server
 xorg-xinit
