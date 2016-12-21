@@ -3,9 +3,9 @@ font = Inconsolata for Powerline, Font Awesome 13
 
 [colors]
 foreground = #d6d6d6
-foreground_bold = #d6d6d6
+foreground_bold = #e5e5e5
 background = #2E2E2E
-cursor = #d6d6d6
+cursor = #707070
 
 # colors from color0 to color254 can be set
 color0 = #073642
