@@ -6,11 +6,6 @@ chromium
 fakeroot
 gcc
 gstreamer
-gstreamer0.10
-gstreamer0.10-bad
-gstreamer0.10-base
-gstreamer0.10-good
-gstreamer0.10-ugly
 htop
 i3-wm
 i3lock
