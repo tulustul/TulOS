@@ -1,0 +1,15 @@
+// based on a keyboard map from an 'xkb/symbols/pl' file
+
+default  partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    include "pl"
+
+    name[Group1]="Polish for real programmers";
+
+    key <AB08>  { [     comma,       less,  parenleft, multiply   ]     };
+    key <AB09>  { [    period,    greater, parenright, division   ]     };
+    key <AC10>  { [    semicolon,   colon, underscore, dead_acute ]     };
+
+    include "kpdl(dot)"
+};
