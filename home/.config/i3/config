@@ -181,6 +181,11 @@ for_window [class=".*"] title_format "<b>%title</b>"
 
 for_window [class="chromium"] border pixel 0
 
+# volume control
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +10%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -10%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+
 # scrot & xnviewmp - root
 bindsym Print exec scrot -e 'mv $f /tmp/ && xnviewmp /tmp/$f'
 
