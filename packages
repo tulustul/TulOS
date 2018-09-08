@@ -2,7 +2,6 @@ arand
 automake
 base-devel
 binutils
-breeze
 chromium
 fakeroot
 gcc
