@@ -2,7 +2,7 @@ set -e
 
 function install_aur_package {
     if ! (pacman -Q $1 >/dev/null) then
-        yaourt -S $1 --noconfirm
+        yay $1 --noconfirm
     fi
 }
 
@@ -18,21 +18,18 @@ if ! (pacman -Q package-query >/dev/null) then
     rm -Rf package-query
 fi
 
-if ! (pacman -Q yaourt >/dev/null) then
+if ! (pacman -Q yay >/dev/null) then
     cd ~
-    rm -Rf yaourt
-    git clone https://aur.archlinux.org/yaourt.git
-    cd yaourt
+    rm -Rf yay
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
     makepkg -si --noconfirm
     cd ..
-    rm -Rf yaourt
+    rm -Rf yay
 fi
 
 install_aur_package i3blocks
-install_aur_package ttf-inconsolata-g  # probably not needed
-install_aur_package ttf-font-awesome
-install_aur_package xnviewmp
-install_aur_package adapta-gtk-theme
+install_aur_package flameshot
 
 sudo pip install virtualenvwrapper
 
