@@ -1,11 +1,5 @@
 set -e
 
-function install_aur_package {
-    if ! (pacman -Q $1 >/dev/null) then
-        yay $1 --noconfirm
-    fi
-}
-
 sudo pacman -Syu - < packages --noconfirm
 
 if ! (pacman -Q package-query >/dev/null) then
@@ -28,12 +22,7 @@ if ! (pacman -Q yay >/dev/null) then
     rm -Rf yay
 fi
 
-install_aur_package i3blocks
-install_aur_package flameshot
-
 sudo pip install virtualenvwrapper
-
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 cp -R ~/TulOS/home/. ~/
 
@@ -51,3 +40,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 
 rm -Rf ~/TulOS
+
+
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
