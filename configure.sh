@@ -22,6 +22,10 @@ if ! (pacman -Q yay >/dev/null) then
     rm -Rf yay
 fi
 
+yay i3blocks-contrib -Sq
+
+cp /usr/lib/i3blocks/ ~/.local/share/i3blocks-contrib -r
+
 sudo pip install virtualenvwrapper
 
 cp -R ~/TulOS/home/. ~/
