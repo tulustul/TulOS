@@ -18,7 +18,7 @@ python-pip
 ranger
 rofi
 sysstat
-alacritty
+kitty
 vim
 xautolock
 xclip
