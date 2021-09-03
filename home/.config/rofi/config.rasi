@@ -1,0 +1,70 @@
+configuration {
+  kb-select-1: "";
+  kb-select-2: "";
+  kb-select-3: "";
+  kb-select-4: "";
+  kb-select-5: "";
+  kb-select-6: "";
+  kb-select-7: "";
+  kb-select-8: "";
+  kb-select-9: "";
+  kb-select-10: "";
+}
+
+* {
+  bg: #273238;
+  fg: #aaaaaa;
+  active: #ffffff;
+  active-bg: #374248;
+  border: #212a30;
+}
+
+window {
+  location: north;
+  font: "Inconsolata 16";
+  width: 1000px;
+  border: 0;
+  background-color: @bg;
+  padding: 10px;
+}
+
+entry {
+  text-color: @active;
+}
+
+inputbar,
+prompt {
+  text-color: @fg;
+}
+
+listview {
+  lines: 6;
+  scrollbar: false;
+  border: 2px 0 0 0;
+  border-color: @border;
+  padding: 5px 0px 0px 0px;
+  text-color: @fg;
+}
+
+element {
+  padding: 1px 10px;
+}
+
+element normal.normal {
+  background-color: @bg;
+  text-color: @fg;
+}
+
+element selected.normal {
+  background-color: @active-bg;
+  text-color: @active;
+}
+
+element alternate.normal {
+  background-color: @bg;
+  text-color: @fg;
+}
+
+element alternate.active {
+  background-color: @bg;
+}
